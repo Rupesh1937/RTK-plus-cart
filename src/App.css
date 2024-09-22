@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+.row{
+  margin-left: 50px;
+  margin-top: 10px;
 }
 
 .App-logo {
@@ -34,5 +41,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1020px){
+  .App{
+    display: flex;
+    
+  }
+  .row{
+    justify-content: center;
+    align-items: center;
+    margin: 0 28% 0 28%;
   }
 }
